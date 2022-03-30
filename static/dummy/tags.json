@@ -1,0 +1,37 @@
+{
+    "groups": {
+        "#writing": ["#thelawrence", "#tfa", "#thelit"],
+        "#technology": ["#programmingclub", "#robotics"],
+        "#sports": ["#baseball"]
+    },
+    "tags": {
+        "#thelawrence": {
+            "description": "Lawrenceville's oldest weekly paper.",
+            "groups": "#writing"
+        },
+        "#thelit": {
+            "description": "The Lit.",
+            "groups": "#writing"
+        },
+        "#tfa": {
+            "description": "The First Amendment.",
+            "groups": "#writing"
+        },
+        "#programmingclub": {
+            "description": "Programming Club.",
+            "groups": "#programming"
+        },
+        "#robotics": {
+            "description": "Robotics Club.",
+            "groups": "#programming"
+        },
+        "#baseball": {
+            "description": "Lawrenceville Baseball.",
+            "groups": "#sports"
+        },
+        "#architecture": {
+            "description": "",
+            "groups": ""
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <link rel="preload" href="{{ url_for('static', filename='style/pico.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="{{ url_for('static', filename='style/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link rel="stylesheet" href="{{ url_for('static', filename='style/pico.min.css') }}" />
+            <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}" />
+        </noscript>
+        <title>{% block title %}{% endblock %} | Connect</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Lawrenceville Connect" />
+        {% endblock %}
+    </head>
+    <body>
+        <div>{% block content %}{% endblock %}</div>
+        <footer class="container">
+            {% block footer %}
+            {# &copy; Copyright 2022 by <a href="https://ntrupin.com/">Noah Trupin</a>. #}
+            {% endblock %}
+        </footer>
+    </body>
+</html>

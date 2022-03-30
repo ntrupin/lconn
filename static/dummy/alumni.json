@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Stephen Schragger",
+        "house": "Woodhull",
+        "class": "1957",
+        "bio": "Management @ Boston Properties",
+        "tags": [
+            "#management"
+        ]
+    },
+    {
+        "name": "Katherine Trupin",
+        "house": "Kirby",
+        "class": "1992",
+        "bio": "Management @ Princeton University",
+        "tags": [
+            "#admissions"
+        ]
+    },
+    {
+        "name": "Joe Tsai",
+        "house": "Cleve",
+        "class": "1982",
+        "bio": "Co-Founder and Vice Chairman @ Alibaba",
+        "tags": [
+            "#technology"
+        ]
+    },
+    {
+        "name": "David Schragger",
+        "house": "Woodhull",
+        "class": "1994",
+        "bio": "Architect @ Studio Hillier in Princeton",
+        "tags": [
+            "#architecture"
+        ]
+    }
+]

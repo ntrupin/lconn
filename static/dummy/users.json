@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Noah Trupin",
+        "user": "ntrupin23",
+        "house": "Woodhull",
+        "class": "2023",
+        "bio": "GSA VP, The Lawrence 142",
+        "tags": [
+            "#thelawrence",
+            "#programmingclub",
+            "#gsa"
+        ]
+    },
+    {
+        "name": "Autri Basu",
+        "username": "abasu23",
+        "house": "Woodhull",
+        "class": "2023",
+        "bio": "",
+        "tags": [
+            "#thelawrence",
+            "#tfa"
+        ]
+    },
+    {
+        "name": "Luke Park",
+        "user": "lpark24",
+        "house": "Woodhull",
+        "class": "2024",
+        "bio": "",
+        "tags": [
+            "#thelawrence"
+        ]
+    },
+    {
+        "name": "Jacob Trupin",
+        "user": "jtrupin24",
+        "house": "Woodhull",
+        "class": "2024",
+        "bio": "",
+        "tags": [
+            "#baseball"
+        ]
+    }
+]

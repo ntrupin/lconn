@@ -1,0 +1,98 @@
+{% extends "base.jinja" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style>
+        .homenav > summary::after {
+            display: none !important;
+        }
+
+        .postclub {
+            display: block;
+        }
+
+        .userclub {
+            display: block;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <details role="list" class="homenav">
+                        <summary aria-haspopup="listbox" role="link">
+                            {% include "svg/menu.svg" %}
+                        </summary>
+                        <ul data-mode="users" id="mode" role="listbox">
+                            <li><a id="modeUsers">Home</a></li>
+                            <li><a id="modeAlumni">Alumni</a></li>
+                            <li><a>Profile</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>Lawrenceville Connect</strong></li>
+            </ul>
+            <ul>
+                {# <li><a href="#" class="secondary">…</a></li>  #}
+            </ul>
+        </nav>
+    </header>
+    <main class="container" id="app">
+        <input type="search" id="search" name="search" placeholder="Search tags...">
+        <div class="row" id="posts">
+ 
+        </div>
+    </main>
+    <script id="postTemplate" type="text/template">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <article>
+                <header>
+                    <small><i><a data-target="modal-profile" onClick="toggleModal(event)">{! author !}</a></i> to</small>
+                    <b class="postclub">{! category !}</b>
+                </header>
+                <h4>{! title !}</h4>
+                <div>
+                    {! body !}
+                </div>
+                <footer>
+                    <small>Published {! date !}</small>
+                </footer>
+            </article>
+        </div>
+    </script>
+    <script id="userTemplate" type="text/template">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <article>
+                <header>
+                    <b>{! name !}</b>
+                    <small class="userclub">{! house !} | Class of {! class !}</small>
+                </header>
+                <div>
+                    {! bio !}
+                    <br /><br />
+                    {! tags !}
+                </div>
+                <footer>
+                    <small>
+                        <a href="#" class="contrast">Contact</a>
+                    </small>
+                </footer>
+                <!--<h4>{! title !}</h4>
+                <div>
+                    {! body !}
+                </div>
+                <footer>
+                    <small>Published {! date !}</small>
+                </footer>-->
+            </article>
+        </div>
+    </script>
+    <script id="errorTemplate" type="text/template">
+        <i>{! message !}</i>
+    </script>
+    <script src="{{ url_for('static', filename='script/index.js') }}" type="module"></script>
+{% endblock %}
