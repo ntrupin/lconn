@@ -7,5 +7,3 @@ if [ ! -d "./venv" ]; then
 else
     . ./venv/bin/activate
 fi
-
-export FLASK_APP=lconn.py
